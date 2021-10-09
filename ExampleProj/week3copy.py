@@ -12,4 +12,5 @@ def index():
 def log_in(name):
     response = make_response(render_template("login.html", name=name))
     response.set_cookie('user','user_name')
+	print(" new change")
     return response
