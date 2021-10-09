@@ -17,4 +17,5 @@ def login():
 app.route('/logout')
 def logout():
     session.pop('username', None)
+print("hellloo diff ")
     return redirect(url_for('index'))
